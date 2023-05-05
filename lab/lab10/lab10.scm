@@ -15,7 +15,10 @@
 
 ; (define lst '((1) 2 (3 4) 5))  ; easy way of doing
 
-(define lst (cons (cons 1 nil) (cons 2 (cons (cons 3 (cons 4 nil)) (cons 5 nil))))) ; hard way ;_;
+(define lst (cons (cons 1 nil) 
+                    (cons 2  
+                        (cons (cons 3 (cons 4 nil))    
+                            (cons 5 nil)))))            ; hard way ;_; - still no idea how to arrage for readability
 
 
 (define (duplicate lst) 
